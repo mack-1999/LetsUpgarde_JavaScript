@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 | Day 2</title>
+</head>
+<body>
+    <script>
+       let today = new Date();
+
+       let day = addzero(today.getDate());
+       let month = addzero(today.getMonth()+1);
+       let year = today.getFullYear();
+
+       document.write("Format DD/MM/YYYY : "+day+" / "+month+" / "+year);
+
+       function addzero(num){
+        return num < 10 ? `0${num}`:num;
+      }
+
+    </script>
+</body>
+</html>

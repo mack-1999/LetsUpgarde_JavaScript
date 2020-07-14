@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 | Assignment no.1</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Console Functions</h1>
+    <h3 style="text-align: center;">Types Console Functions are as follows</h3>
+    
+        <h5 style="text-align: center;">console.clear()</h5>
+        <h5 style="text-align: center;">console.clear()</h5>
+        <h5 style="text-align: center;">console.log()</h5>
+        <h5 style="text-align: center;">console.count()</h5>
+        <h5 style="text-align: center;">console.error()</h5>
+        <h5 style="text-align: center;">console.group()</h5>
+        <h5 style="text-align: center;">console.groupEnd()</h5>
+        <h5 style="text-align: center;">console.info()</h5>
+        <h5 style="text-align: center;">console.table()</h5>
+        <h5 style="text-align: center;">console.time()</h5>
+        <h5 style="text-align: center;">console.timeEnd()</h5>
+        <h5 style="text-align: center;">console.warn()</h5>
+          
+      
+    <script>
+
+        //.1
+         console.clear();/*The console.clear() method clears the console.The console.clear() method will also write a message in the console: "Console was cleared".*/
+
+        //.2
+        var a = 2; 
+        console.log(a); /* The console.log() is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.*/
+        
+        //.3
+        console.count("Count No.");/* Writes to the console the number of times that particular console.count() is called.*/
+        
+        //.4
+        console.error("You made a mistake");/* The console.error() method writes an error message to the console.The console is useful for testing purposes.*/
+        
+        //.5
+        console.log("Console Group");
+        console.group();/* The console.group() method indicates the start of a message group.All messages will from now on be written inside this group.Use the console.groupEnd() method to end the group.*/
+        console.log("Inside a Console group!");
+        console.groupEnd();
+        console.log("After end of console Group");
+        
+        //.6
+        var myObj = { firstname : "John", lastname : "Doe" };
+        console.info(myObj);/* The console.info() method writes a message to the console.*/
+        
+        //.7
+        var car1 = { name : "Audi", model : "A4" }
+        var car2 = { name : "Volvo", model : "XC90" }
+        var car3 = { name : "Ford", model : "Fusion" }
+        console.table([car1, car2, car3]);/* The console.table() method writes a table in the console view.*/
+
+        //.8
+        console.time("test1");
+        for (i = 0; i < 2; i++) {
+            console.log(i);
+    
+        }
+        console.timeEnd("test1");/* The console.time() method starts a timer in the console view.This method allows you to time certain operations in your code for testing purposes.Use the console.timeEnd() method to end the timer and display the result in the console.view.*/
+
+        //.9
+        var myObj = { firstname : "Mack", lastname : "nikam" };
+        console.warn(myObj);
+
+
+    </script>
+</body>
+</html>

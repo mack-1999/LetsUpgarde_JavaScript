@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 | Question 2</title>
+</head>
+<body>
+    <h1 style="text-align: center;">String And Array Methods in JavaScript.</h1>
+    <h4 style="text-align: center;">Press F12 to see Output on Console.</h4>
+    <script>
+
+            let name = "Mack";
+            let skill = "WebDesigning";
+            let weakness = "Backend Programming";
+
+            console.log("The name is " + name + " .His skill is " + skill + " and his weakness is " + weakness);
+
+            console.log(`The name is ${name}. His skill is ${skill} and his weakness is ${weakness}.`);
+
+
+            let text = "The quick brown fox jumps over the wall";
+
+            console.log(text);
+
+            // To check the length
+            console.log(text.length)
+
+            // To change the case
+            console.log(text.toLowerCase());
+            console.log(text.toUpperCase());
+
+            // Accessing the index
+            console.log(text[5]);
+            console.log(text.indexOf('o'));
+            console.log(text.lastIndexOf('o'))
+
+            console.log(text.charAt('12'));
+
+            console.log(text.endsWith("well"));
+
+            console.log(text.split('e'));
+
+
+            /* substring() is similar to slice().
+            The difference is that the second parameter specifies the length of the extracted part.*/
+            let res = text.substring(4, 9); //output will be ( quick )
+            console.log(res);
+ 
+           // slice
+           let str = text.slice(4, 9);  //output will be ( quick )
+           console.log(str);
+
+           // replace
+           var n = text.replace("fox", "Tiger");
+           console.log(n); // output - The quick brown Tiger jumps over the wall
+
+           
+ 
+
+          // Array
+          let arr = ['one', true, 32, ['1','2']];
+          let arr2 = ['mack', 'krish','superman'];
+          console.log(arr);
+
+
+          console.log(Array.isArray(arr));
+          
+          //Reversing Array
+          console.log(arr.reverse());
+
+          // indexOf('value')
+          console.log(arr[3]);
+
+          //pop
+          arr2.pop();  // Removes the last element ("superman") from arr2
+          
+
+          //push
+          arr2.push("Batman");  //  Adds a new element ("Batman") to arr2
+          console.log(arr2);
+
+    </script>
+</body>
+</html>
